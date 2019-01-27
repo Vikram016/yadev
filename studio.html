@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Yadev Studio -Studio Photos</title>
+<style type="text/css">
+body {
+	border-top: 10px solid #bfb96b;
+	margin: 0; padding: 0;
+	background: #ffffff url(body_bg.jpg);
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+.container {
+	width: 980px;
+	margin: 0;
+	overflow: visible
+	background: url(container_stretch.gif);
+	font-size: 1.2em;
+	position: relative;
+}
+#sidenav {
+	width: 300px;
+	position: fixed;
+	float: left;
+}
+*html #sidenav {
+	position: absolute; 
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+#sidenav h2 {
+	text-indent: -99999px;
+	height: 41px;
+	padding: 0; margin: 15px 0 5px;
+	background-position:  20px top;
+}	
+h2.categories {background: url(h2_categories.gif) no-repeat ;}
+h2.sites {background: url(h2_othersites.gif) no-repeat ;}
+#sidenav ul {
+	margin: 0; padding: 0 20px 30px 20px;
+	list-style: none;
+	background: url(sidenav_hr.gif) no-repeat right bottom;
+}
+#sidenav ul li{
+	margin: 0; padding:  0;
+	display: inline;
+}
+#sidenav ul li a{
+	display: block;
+	margin: 0; padding:  5px 0 5px 15px;
+	background: url(sidenav_arrow.gif) no-repeat left center;
+	text-decoration: none;
+	color: #333;
+}
+#sidenav ul li a:hover {
+	color: #c5c192;
+}
+div.large {
+background-color:#bfb96b;
+  } 
+#content {
+	float: right;
+	width: 680px;
+	padding: 0 20px 20px;
+}
+#content h1 {
+	background: url(h1_home.gif) no-repeat center top;
+	text-indent: -9999px;
+	height: 145px;
+	margin: 0 0 0 -20px; padding: 0;
+}
+#content h2 {
+	color: #7f0708;
+	margin: 10px 0;  padding: 10px 0;
+	font-size: 2em;
+	font-weight: normal;
+}
+#content p {
+	line-height: 1.8em;
+	padding: 7px 0;
+	margin: 7px 0;
+}
+.style1 {font-size: 9px; font-family:Verdana, Arial, Helvetica, sans-serif}
+</style>
+<script language=JavaScript> var message="Welcome to Studio Yadev"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<script language=JavaScript> var message="Welcome to Studio Yadev"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	function staticNav() { 
+		var sidenavHeight = $("#sidenav").height();
+		var winHeight = $(window).height();
+		var browserIE6 = (navigator.userAgent.indexOf("MSIE 6")>=0) ? true : false;
+
+		if (browserIE6) {
+			$("#sidenav").css({'position' : 'absolute'});
+		} else {
+			$("#sidenav").css({'position' : 'fixed'});
+		}
+	
+		if (sidenavHeight > winHeight) {
+			$("#sidenav").css({'position' : 'static'});
+		}
+	}
+	
+	staticNav();
+	
+	$(window).resize(function () { //Each time the viewport is adjusted/resized, execute the function
+		staticNav();
+	});
+
+});
+</script>
+</head><body onselectstart="return false;" ondragstart="return false;">
+
+<div class="container">
+	<div style="position: fixed;" id="sidenav">
+	  <img src="logo.gif" alt=""  align="absmiddle"/>
+	  <h2 class="categories">Categories</h2>
+      <ul>
+        	<li><a href="people.html"><strong>PEOPLE</strong></a></li>
+            <li><a href="studio.html"><strong>STUDIO</strong><img src="selected.gif" width="84" height="17"  border="0"align="bottom"/></a></li>
+            <li><a href="exteriors.html"><strong>EXTERIOR</strong></a></li>
+             <li><a href="interiors.html"><strong>INTERIOR</strong></a></li>
+            <li><a href="travel.html"><strong>TRAVEL</strong></a></li>
+             <li><a href="scapes.html"><strong>SCAPES</strong></a></li>
+              <li><a href="art.html"><strong>ART</strong></a></li>
+      </ul>
+       
+          <ul>      	<li class="style1">#641, 1st floor, </li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">11th main,</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Hal 2nd stage</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Indiranagar,</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1"> Bangalore - 560038, </li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">India</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Mobile: +91 9845099505</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Phone: +91 80 25293492</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">E-mail: imagine@yadev.com</li>
+        <br />
+  </ul> 
+  </div>
+
+    <div id="content">
+    <div style="display: block; position: relative; height: 8000px;" >
+  <div style="position: absolute; left: 310px; top: 10px;" class="image loaded" >
+            <div class="wrapper" ></div>
+      </div>
+      <div style="position: absolute; left: 620px; top: 11px;" class="image loaded" >
+        <div class="wrapper" ><img  src="studio/9.jpg"  alt=""  border="0"></div>
+      </div>
+          <div style="position: absolute; left: 310px; top: 11px;" class="image loaded" >
+            <div class="wrapper" ><img  src="studio/7.jpg" alt=""  border="0"></div>
+      </div>
+  <div style="position: absolute; left: 310px; top: 217px; width: 301px;" class="image loaded" >
+      <div class="wrapper" ><img  src="studio/14.jpg"  alt=""  border="0"></div>
+      </div>
+      <div style="position: absolute; left: 310px; top: 427px;" class="image  loaded" >
+        <div class="wrapper" ><img  src="studio/16.JPG"    alt="" width="300" height="224"  border="0"></div>
+      </div>
+<div style="position: absolute; left: 310px; top: 825px;" class="image loaded" >
+            <div class="wrapper" ></div>
+        <div style="position: absolute; left: -310px; top: -641px;" class="image loaded">
+          <div class="wrapper" ><img  src="studio/15.jpg"   alt=""  border="0"></div>
+        </div>
+<div style="position: absolute; left: -309px; top: -813px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/17.jpg"   alt=""  border="0"></div>
+      </div>
+          
+<div style="position: absolute; left: 2px; top: 553px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/39.jpg"   alt=""  border="0"></div>
+        </div>
+          
+           <div style="position: absolute; left: -310px; top: 623px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/38.jpg"   alt=""  border="0"></div>
+        </div>
+          
+           <div style="position: absolute; left: 3px; top: 1011px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/37.jpg"   alt=""  border="0"></div>
+        </div>
+          
+           <div style="position: absolute; left: 0px; top: 273px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/36.jpg"   alt=""  border="0"></div>
+        </div>
+<div style="position: absolute; left: 310px; top: 273px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/34.jpg"   alt=""  border="0"></div>
+        </div>
+           <div style="position: absolute; left: -310px; top: 272px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/21.jpg"   alt=""  border="0"></div>
+        </div>
+  <div style="position: absolute; left: -310px; top: -167px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/23.jpg"   alt=""  border="0"></div>
+        </div>
+           <div style="position: absolute; left: 311px; top: 734px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/52.jpg"   alt=""  border="0" /></div>
+        </div>
+           
+           <div style="position: absolute; left: 313px; top: 1413px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/45.jpg"   alt=""  border="0" /></div>
+        </div>
+<div style="position: absolute; left: -309px; top: 965px;" class="image loaded">
+            <div class="wrapper" ><img  src="studio/50.jpg"   alt=""  border="0" /></div>
+        </div>
+          
+            <div style="position: absolute; left: -309px; top: 3514px;" class="image loaded">
+            <div class="wrapper" ></div>
+          </div>
+            <div style="position: absolute; left: -306px; top: 1416px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/27.jpg"   alt="" width="610"  border="0" /></div>
+      </div> 
+        <div style="position: absolute; left: 313px; top: 1149px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/46.jpg"   alt=""  border="0" /></div>
+      </div> 
+      <div style="position: absolute; left: -305px; top: 1780px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/57.jpg"   alt=""  border="0" /></div>
+      </div> 
+      <div style="position: absolute; left: 309px; top: 2160px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/18.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 307px; top: 2626px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/12.jpg"   alt=""  border="0" /></div>
+      </div> <div style="position: absolute; left: -310px; top: 2159px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/8.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: 2556px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/6.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -1px; top: 2556px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/10.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: 3127px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/19.jpg"   alt="" width="920"  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -309px; top: 7031px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/11.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 3px; top: 4278px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/31.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 312px; top: 3790px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/26.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: 3720px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/13.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 4px; top: 3472px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/25.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -310px; top: 4909px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/32.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 4px; top: 3790px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/22.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: 3935px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/24.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -307px; top: 3471px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/20.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -309px; top: 4535px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/30.jpg"   alt=""  border="0" /></div>
+      </div>
+       <div style="position: absolute; left: 1px; top: 4486px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/41.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 312px; top: 5988px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/58.jpg"   alt=""  border="0" /></div>
+      </div>
+       <div style="position: absolute; left: -309px; top: 5117px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/28.jpg"   alt=""  border="0" /></div>
+      </div> <div style="position: absolute; left: -309px; top: 6548px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/29.jpg"   alt=""  border="0" /></div>
+      </div>
+       <div style="position: absolute; left: 312px; top: 6402px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/44.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -309px; top: 5986px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/56.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: 5588px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/42.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 2px; top: 6487px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/53.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -1px; top: 5089px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/5.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 2px; top: 6946px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/48.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 309px; top: 5091px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/51.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: -308px; top: -224px; height: 51px; width: 297px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div>
+        <div style="position: absolute; left: 313px; top: 1707px; height: 65px; width: 300px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div>  <div style="position: absolute; left: -308px; top: 3012px; height: 108px; width: 300px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div>  <div style="position: absolute; left: 307px; top: 3083px; height: 37px; width: 300px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div><div style="position: absolute; left: 312px; top: 4397px; height: 82px; width: 300px;" class="large">
+        <div align="center">
+          <p>You don’t take a photograph, you make it. - Ansel Adams  </p>
+        </div>
+      </div><div style="position: absolute; left: 0px; top: 5475px; height: 105px; width: 300px;" class="large">
+        <div align="center">
+          <p>Your first 10,000 photographs are your worst. – <em>Henri Cartier-Bresson    </em>    </p>
+        </div>
+      </div><div style="position: absolute; left: 309px; top: 5549px; height: 33px; width: 300px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div><div style="position: absolute; left: 3px; top: 7187px; height: 294px; width: 300px;" class="large">
+        <div align="center">
+          <p>If I saw something in my viewfinder that looked  familiar to me, I would do something to shake it up. – <em>Garry  Winogrand</em></p>
+        </div>
+      </div><div style="position: absolute; left: 312px; top: 7195px; height: 284px; width: 300px;" class="large">
+        <div align="center">
+          <p>Nothing happens when you sit at home. I always make it a point to carry a camera with me at all times…I just shoot at what interests me at that moment. – <em>Elliott Erwitt      </em>    </p>
+        </div>
+      </div><div style="position: absolute; left: 2px; top: 1260px; height: 146px; width: 301px;" class="large">
+        <div align="center">
+          <p>YADEV Studio             </p>
+        </div>
+      </div>
+      <div style="position: absolute; left: 1px; top: 5987px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/54.jpg"   alt=""  border="0" /></div>
+      </div>
+       <div style="position: absolute; left: 310px; top: -382px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/49.jpg"   alt="" width="302" height="207"  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 0px; top: 4766px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/1.jpg"   alt=""  border="0" /></div>
+      </div>
+      <div style="position: absolute; left: 313px; top: 6749px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/35.jpg"   alt=""  border="0" /></div>
+      </div>
+      
+      <div style="position: absolute; left: 313px; top: 6986px;" class="image loaded">
+        <div class="wrapper" ><img  src="studio/40.jpg"   alt=""  border="0" /></div>
+      </div>
+      </div>
+    </div>
+
+ </body></html>

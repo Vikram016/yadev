@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Yadev Studio - Travel Photos</title>
+<style type="text/css">
+body {
+	border-top: 10px solid #bfb96b;
+	margin: 0; padding: 0;
+	background: #ffffff url(body_bg.jpg);
+	font: normal 10px Verdana, Arial, Helvetica, sans-serif;
+	color: #444;
+}
+div.large {
+background-color:#bfb96b;
+  } 
+.container {
+	width: 980px;
+	margin: 0;
+	overflow: visible
+	background: url(container_stretch.gif);
+	font-size: 1.2em;
+	position: relative;
+}
+#sidenav {
+	width: 300px;
+	position: fixed;
+	float: left;
+}
+*html #sidenav {
+	position: absolute; 
+	left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+#sidenav h2 {
+	text-indent: -99999px;
+	height: 41px;
+	padding: 0; margin: 15px 0 5px;
+	background-position:  20px top;
+}	
+h2.categories {background: url(h2_categories.gif) no-repeat ;}
+h2.sites {background: url(h2_othersites.gif) no-repeat ;}
+#sidenav ul {
+	margin: 0; padding: 0 20px 30px 20px;
+	list-style: none;
+	background: url(sidenav_hr.gif) no-repeat right bottom;
+}
+#sidenav ul li{
+	margin: 0; padding:  0;
+	display: inline;
+}
+#sidenav ul li a{
+	display: block;
+	margin: 0; padding:  5px 0 5px 15px;
+	background: url(sidenav_arrow.gif) no-repeat left center;
+	text-decoration: none;
+	color: #333;
+}
+#sidenav ul li a:hover {
+	color: #c5c192;
+}
+
+
+
+#content {
+	float: right;
+	width: 680px;
+	padding: 0 20px 20px;
+}
+#content h1 {
+	background: url(h1_home.gif) no-repeat center top;
+	text-indent: -9999px;
+	height: 145px;
+	margin: 0 0 0 -20px; padding: 0;
+}
+#content h2 {
+	color: #7f0708;
+	margin: 10px 0;  padding: 10px 0;
+	font-size: 2em;
+	font-weight: normal;
+}
+#content p {
+	line-height: 1.8em;
+	padding: 7px 0;
+	margin: 7px 0;
+}
+.style1 {font-size: 9px; font-family:Verdana, Arial, Helvetica, sans-serif}
+</style>
+<script language=JavaScript> var message="Welcome to Studio Yadev"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<script language=JavaScript> var message="Welcome to Studio Yadev"; function clickIE4(){ if (event.button==2){ alert(message); return false; } } function clickNS4(e){ if (document.layers||document.getElementById&&!document.all){ if (e.which==2||e.which==3){ alert(message); return false; } } } if (document.layers){ document.captureEvents(Event.MOUSEDOWN); document.onmousedown=clickNS4; } else if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; } document.oncontextmenu=new Function("alert(message);return false") </script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	function staticNav() { 
+		var sidenavHeight = $("#sidenav").height();
+		var winHeight = $(window).height();
+		var browserIE6 = (navigator.userAgent.indexOf("MSIE 6")>=0) ? true : false;
+
+		if (browserIE6) {
+			$("#sidenav").css({'position' : 'absolute'});
+		} else {
+			$("#sidenav").css({'position' : 'fixed'});
+		}
+	
+		if (sidenavHeight > winHeight) {
+			$("#sidenav").css({'position' : 'static'});
+		}
+	}
+	
+	staticNav();
+	
+	$(window).resize(function () { //Each time the viewport is adjusted/resized, execute the function
+		staticNav();
+	});
+
+});
+</script>
+</head><body onselectstart="return false;" ondragstart="return false;">
+<div class="container">
+<div style="position: fixed;" id="sidenav">
+	  <img src="logo.gif" alt=""  align="absmiddle"/>
+	  <h2 class="categories">Categories</h2>
+      <ul>
+        	<li><a href="people.html"><strong>PEOPLE</strong></a></li>
+            <li><a href="studio.html"><strong>STUDIO</strong></a></li>
+            <li><a href="exteriors.html"><strong>EXTERIOR</strong></a></li>
+             <li><a href="interiors.html"><strong>INTERIOR</strong></a></li>
+            <li><a href="travel.html"><strong>TRAVEL</strong><img src="selected.gif" width="84" height="17"  border="0"align="bottom"/></a></li>
+             <li><a href="scapes.html"><strong>SCAPES</strong></a></li>
+              <li><a href="art.html"><strong>ART</strong></a></li>
+      </ul>
+         <ul>      	<li class="style1">#641, 1st floor, </li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">11th main,</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Hal 2nd stage</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Indiranagar,</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1"> Bangalore - 560038, </li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">India</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Mobile: +91 9845099505</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">Phone: +91 80 25293492</li>
+        <span class="style1"><br />
+        </span>
+        <li class="style1">E-mail: imagine@yadev.com</li>
+        <br />
+  </ul>  
+        
+  </div>
+
+    <div id="content">
+    <div style="display: block; position: relative; height: 4300px;" id="set-13555" class="set-view view masoned" data-id="13555" data-title="GALLERY" data-total="109">
+  <div style="position: absolute; left: 309px; top: 10px;" class="image loaded" >
+            <div class="wrapper" ><img  src="travel/1.jpg"  alt=""  border="0"></div>
+      </div>
+          <div style="position: absolute; left: 1px; top: 10px;" class="image loaded" >
+            <div class="wrapper" ><img  src="travel/2.jpg" alt=""  border="0"></div>
+      </div>
+  <div style="position: absolute; left: 618px; top: 11px;" class="image loaded" >
+      <div class="wrapper" ><img  src="travel/24.jpg"  alt=""  border="0"></div>
+      </div><div style="position: absolute; left: 619px; top: 897px; height: 22px; width: 300px;" class="large">
+        <div align="center">
+          YADEV Studio             
+        </div>
+      </div><div style="position: absolute; left: 1px; top: 2424px; height: 55px; width: 302px;" class="large">
+        <div align="center">
+          <p>Studio             YADEV</p>
+        </div>
+      </div><div style="position: absolute; left: 620px; top: 3664px; height: 710px; width: 302px;" class="large">
+        <div align="center"><img src="logo.png" />
+          <p>You’ve got to push yourself harder. You’ve got to start looking for pictures nobody else could take. You’ve got to take the tools you have and probe deeper. – <em>William Albert Allard</em></p>
+        </div>
+      </div>
+      <div style="position: absolute; left: 0px; top: 388px;" class="image  loaded" >
+        <div class="wrapper" ><img  src="travel/3.JPG"    alt=""  border="0"></div>
+      </div>
+      <div style="position: absolute; left: 622px; top: 1004px;" class="image loaded" >
+        <div class="wrapper" ></div>
+        <div style="position: absolute; left: -313px; top: -537px;" class="image loaded">
+          <div class="wrapper" ><img  src="travel/16.jpg"   alt=""  border="0"></div>
+        </div>
+<div style="position: absolute; left: -313px; top: -76px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/20.jpg"   alt=""  border="0"></div>
+        </div>
+          
+  <div style="position: absolute; left: -312px; top: 2911px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/6.jpg"   alt=""  border="0" /></div>
+        </div>
+          
+           <div style="position: absolute; left: -312px; top: 970px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/9.jpg"   alt=""  border="0" /></div>
+        </div>
+          
+           <div style="position: absolute; left: -1px; top: 2205px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/10.jpg"   alt=""  border="0"></div>
+        </div>
+          
+<div style="position: absolute; left: -622px; top: 1836px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/17.jpg"   alt=""  border="0"></div>
+        </div>
+          
+           <div style="position: absolute; left: -623px; top: 1481px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/4.jpg"   alt=""  border="0"></div>
+        </div>
+           <div style="position: absolute; left: -3px; top: 970px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/18.jpg"   alt=""  border="0"></div>
+        </div>
+<div style="position: absolute; left: -312px; top: 618px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/13.jpg"   alt=""  border="0"></div>
+        </div>
+           <div style="position: absolute; left: -621px; top: 1205px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/23.jpg"   alt=""  border="0"></div>
+        </div>
+<div style="position: absolute; left: -622px; top: 433px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/12.jpg"   alt=""  border="0"></div>
+        </div>
+  <div style="position: absolute; left: -621px; top: -34px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/21.jpg"   alt=""  border="0"></div>
+        </div>
+      
+  <div style="position: absolute; left: -621px; top: 2534px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/11.jpg"   alt=""  border="0" /></div>
+        </div>
+           
+           <div style="position: absolute; left: -620px; top: 2205px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/22.jpg"   alt=""  border="0" /></div>
+        </div>
+           
+           <div style="position: absolute; left: -3px; top: -508px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/14.jpg"   alt=""  border="0" /></div>
+        </div>
+           
+           <div style="position: absolute; left: -313px; top: 314px;" class="image loaded">
+            <div class="wrapper" ><img  src="travel/5.jpg"   alt=""  border="0" /></div>
+        </div>
+           
+      <div style="position: absolute; left: -312px; top: 1177px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/5.jpg"   alt=""  border="0" /></div>
+        </div>
+<div style="position: absolute; left: -621px; top: 2911px;" class="image loaded">
+        <div class="wrapper" ><img  src="travel/15.jpg"   alt="" border="0" /></div>
+        </div>
+
+        <div style="position: absolute; left: -621px; top: 636px;" class="image loaded">
+          <div class="wrapper" ><img  src="travel/7.jpg"   alt=""  border="0" /></div>
+        </div>
+               
+      </div>
+    </div>
+</div>
+ </body></html>
